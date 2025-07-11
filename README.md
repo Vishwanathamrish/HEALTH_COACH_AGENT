@@ -65,18 +65,18 @@ It allows users to log daily health metrics, receive category-based health tips,
 
 ```bash
 .
-├── main1.py                 # Main Streamlit app
+├── main.py                  # Main Streamlit app
 ├── requirements.txt         # All dependencies
-├── agent/
+├── agent/                   
 │   ├── tools.py             # Health tips logic
 │   ├── chat_utils.py        # Chat memory save/load
 │   ├── health_agent.py      # AI response system
 │   └── voice_tools.py       # gTTS speech handler
-├── data/
-│   ├── user_logs.csv        # Health log entries
-│   ├── chat_history.csv     # Chat history storage
-│   └── cleared_tips.csv     # Dismissed tips tracker
-
+├── data/                    
+│   ├── user_logs.csv        # Stores wellness logs (sleep, meals, mood, steps)
+│   ├── tip_log.csv          # Records shown health tips with timestamps
+│   └── chat_history.csv     # Persistent chat memory
+│   └── health_tips.csv      # Health tips with 'tip' and 'category' columns
 
 ---
 ## 🚀 Installation & Setup
