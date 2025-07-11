@@ -15,7 +15,7 @@ It allows users to log daily health metrics, receive category-based health tips,
 
 ### 💡 Daily Health Tips
 - Get a random tip by category (Hydration, Nutrition, Sleep, Mental Health, Exercise).
-- Cleared tips are not repeated (stored in `cleared_tips.csv`).
+- health tips are not repeated (stored in `health_tips.csv`).
 - Tip logs are recorded for reference.
 
 ### 🔊 Voice Assistant
@@ -72,7 +72,7 @@ It allows users to log daily health metrics, receive category-based health tips,
 │   ├── chat_utils.py        # Chat memory save/load
 │   ├── health_agent.py      # AI response system
 │   └── voice_tools.py       # gTTS speech handler
-├── data/                    
+├── data/                    # ✅ Auto-created if not present
 │   ├── user_logs.csv        # Stores wellness logs (sleep, meals, mood, steps)
 │   ├── tip_log.csv          # Records shown health tips with timestamps
 │   └── chat_history.csv     # Persistent chat memory
